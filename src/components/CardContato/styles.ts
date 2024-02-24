@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 import variaveis from '../../styles/variaveis'
 
-export const CardContainer = styled.li`
+export const CardContainer = styled.div`
   display: flex;
   position: relative;
   flex-direction: column;
