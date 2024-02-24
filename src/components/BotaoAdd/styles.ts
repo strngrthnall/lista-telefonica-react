@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 import styled from 'styled-components'
 import variaveis from '../../styles/variaveis'
 
-const Botao = styled(Link)`
+const BotaoAddStyle = styled(Link)`
   display: flex;
   justify-content: center;
   align-items: center;
@@ -33,4 +33,4 @@ const Botao = styled(Link)`
     background-color: transparent;
   }
 `
-export default Botao
+export default BotaoAddStyle

@@ -2,6 +2,7 @@ import { useSelector } from 'react-redux'
 
 import CardContato from '../../components/CardContato'
 import * as S from './styles'
+import * as GS from '../../styles'
 import { RootReducer } from '../../store'
 
 const Lista = () => {
@@ -15,7 +16,6 @@ const Lista = () => {
       contatosFiltrados = contatosFiltrados.filter(
         (item) => item.nome.toLowerCase().search(termo.toLowerCase()) >= 0
       )
-      console.log(contatosFiltrados)
       return contatosFiltrados
     } else {
       return itens
@@ -25,7 +25,7 @@ const Lista = () => {
   const contatos = filtroContatos()
 
   return (
-    <S.ListaContainer>
+    <GS.Container>
       {itens.length > 0 ? (
         <S.CardsContainer>
           {contatos.length > 0 ? (
@@ -50,7 +50,7 @@ const Lista = () => {
           Está meio vazio por aqui. Adicione um novo contato!
         </S.ResultadoPesquisa>
       )}
-    </S.ListaContainer>
+    </GS.Container>
   )
 }
 

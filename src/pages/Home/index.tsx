@@ -4,7 +4,7 @@ import Lista from '../../containers/Lista'
 const Home = () => {
   return (
     <>
-      <Header />
+      <Header barraPesquisa />
       <Lista />
     </>
   )
